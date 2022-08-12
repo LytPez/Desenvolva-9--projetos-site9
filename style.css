@@ -1,3 +1,7 @@
+/*
+alinhando ao centro, definindo altura de 90% da pagina
+chamando animanção 
+*/
 body{
   display: flex ;
   justify-content: center;
@@ -5,6 +9,11 @@ body{
   height: 90vh;
   animation: body 4s infinite linear;
 }
+
+/*
+configurando animação que troca a cor de fundo em,
+ 0,20,50,70 e 100% do tempo da animação definida acima
+*/
   @keyframes body{
     0%{background: red;}
     20%{background: black;}
@@ -13,10 +22,17 @@ body{
     100%{background: red;}
   }
 
+  /*
+  definindo cor e chamando animação
+  */
 h1{
   color: aliceblue;
   animation: font-size 4s infinite alternate;
 } 
+
+/*
+mudando font
+*/
 @keyframes font-size{
   from{font-size: 100%;}
   to{font-size: 200%;}
